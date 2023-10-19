@@ -1,11 +1,15 @@
 
 
 <script>
-
+import TrustedSection from './partials/TrustedSection.vue';
 
 export default {
   
   name: 'Main',
+
+  components:{
+    TrustedSection
+  }
 
 
 }
@@ -13,7 +17,7 @@ export default {
 
 <template>
   
-  
+  <TrustedSection/>
 
 </template>
 

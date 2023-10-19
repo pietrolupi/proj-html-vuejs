@@ -49,7 +49,8 @@ export default {
 @use '../scss/partials/vars' as *;
   .jumbotron{
     background-image: url('../assets/img/h5-slide-3-background.jpg');
-    height: 820px;
+    background-position: center;
+    height: 670px;
     width: 100vw;
     color: $text-secondary-color;
     position: relative;
@@ -94,6 +95,7 @@ export default {
         color: $text-secondary-color;
         border: none;
         padding: 19px 41px ;
+        margin-top: 30px;
       }
     }
 

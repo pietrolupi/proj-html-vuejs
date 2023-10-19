@@ -4,12 +4,13 @@
 
 
 import Jumbotron from './components/Jumbotron.vue';
-
+import Main from './components/Main.vue';
 export default {
 
   name: 'App',
   components: {
     Jumbotron,
+    Main,
   },
 
   data(){
@@ -34,7 +35,7 @@ export default {
 
 <template>
   <Jumbotron/>
-  <h1>Tatto g g g</h1>
+  <Main/>
 </template>
 
 
