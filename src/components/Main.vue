@@ -2,13 +2,15 @@
 
 <script>
 import TrustedSection from './partials/TrustedSection.vue';
+import EmpoweringSection from './partials/EmpoweringSection.vue';
 
 export default {
   
   name: 'Main',
 
   components:{
-    TrustedSection
+    TrustedSection,
+    EmpoweringSection,
   }
 
 
@@ -18,6 +20,7 @@ export default {
 <template>
   
   <TrustedSection/>
+  <EmpoweringSection/>
 
 </template>
 
