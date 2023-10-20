@@ -3,6 +3,7 @@
 <script>
 import TrustedSection from './partials/TrustedSection.vue';
 import EmpoweringSection from './partials/EmpoweringSection.vue';
+import StudentCitSection from './partials/StudentCitSection.vue';
 
 export default {
   
@@ -11,6 +12,7 @@ export default {
   components:{
     TrustedSection,
     EmpoweringSection,
+    StudentCitSection
   }
 
 
@@ -21,6 +23,7 @@ export default {
   
   <TrustedSection/>
   <EmpoweringSection/>
+  <StudentCitSection/>
 
 </template>
 
