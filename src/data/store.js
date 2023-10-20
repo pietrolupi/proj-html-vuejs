@@ -45,5 +45,28 @@ export const store = reactive({
       name: 'DIY&Craft',
       img: 'h5-custom-icon-6.png'
     }
+  ],
+
+  studentCitCards: [
+    {
+      name: 'Joan Collins',
+      role: 'STUDENT',
+      cit: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem fugit ex quibusdam deserunt aut, quia voluptates reiciendis! Quis reprehenderit veritatis architecto pariatur rem dolore, fugit sed, hic dignissimos ullam non.',
+      img: 'instructor-img-6-150x150.jpg'
+    },
+
+    {
+      name: 'Giampiero Borsalino',
+      role: 'INSTRUCTOR',
+      cit: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem fugit ex quibusdam deserunt aut, quia voluptates reiciendis! Quis reprehenderit veritatis architecto pariatur rem dolore, fugit sed, hic dignissimos ullam non.',
+      img: 'instructor-img-9-150x150.jpg',
+    },
+
+    {
+      name: 'Satoru Gojo',
+      role: 'PROFESSOR',
+      cit: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem fugit ex quibusdam deserunt aut, quia voluptates reiciendis! Quis reprehenderit veritatis architecto pariatur rem dolore, fugit sed, hic dignissimos ullam non.',
+      img: 'instructor-img-8-150x150.jpg'
+    },
   ]
 })
