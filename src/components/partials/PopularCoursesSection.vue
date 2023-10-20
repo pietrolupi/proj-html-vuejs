@@ -70,7 +70,7 @@
         <h1>CIAONEEEEEEEEE</h1>
       </swiper-slide>
       <swiper-slide>
-        <h1>CIAONEEEEEEEEE</h1>
+        <h1>CIAONEEEEEEE</h1>
       </swiper-slide>
    
  </swiper>
