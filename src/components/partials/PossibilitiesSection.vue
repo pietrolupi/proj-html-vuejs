@@ -50,9 +50,9 @@ export default {
       </ul>
       <img :src="getImagePath(item.content.icon)" alt="">
     </div>
-
-
   </div>
+
+  <div class="greyline"></div>
 </template>
 
 
@@ -62,7 +62,7 @@ export default {
   .general-container{
     display: flex;
     padding-top: 150px;
-    margin-bottom: 300px;
+
 
     .selection-list{
 
@@ -127,5 +127,12 @@ export default {
       }
 
     }
+  }
+
+  .greyline{
+    height: 1px;
+    width: 100%;
+    background-color: $border-color;
+    margin-top: 150px;
   }
 </style>

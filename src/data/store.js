@@ -195,5 +195,78 @@ export const store = reactive({
 
     },
 
-  ]
+  ],
+
+  popularCourses: [
+    {
+      title: 'Android Developer',
+      teacher: 'David Sanders',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore mollitia id eveniet quam beatae eius rerum possimus blanditiis sapiente totam.',
+      image: 'course-1-f-img-350x282.jpg',
+      tag: 'PROGRAMMING'
+    },
+
+    {
+      title: 'Web Designing',
+      teacher: 'Jennifer Powell',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore mollitia id eveniet quam beatae eius rerum possimus blanditiis sapiente totam.',
+      image: 'course-2-f-img-350x282.jpg',
+      tag: 'PROGRAMMING'
+    },
+
+    {
+      title: 'Financial Modeling',
+      teacher: 'Edward Bowman',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore mollitia id eveniet quam beatae eius rerum possimus blanditiis sapiente totam.',
+      image: 'course-3-f-img-350x282.jpg',
+      tag: 'BUSINESS'
+    },
+
+    {
+      title: 'Business english',
+      teacher: 'Doris Crawford',
+      description: 'Become a professional Android Developer as you learn with us.',
+      image: 'course-4-f-img-350x282.jpg',
+      tag: 'SOFTWARE'
+    },
+
+    {
+      title: 'Professional Lorem',
+      teacher: 'Lorenzo Ipsumi',
+      description: 'Cupcake sugar plum muffin. Marzipan sweet candy marzipan soufflé. Tart candy canes marzipan sugar plum chocolate cake chocolate bar jelly-o. Jelly beans chocolate cake ice cream biscuit.',
+      image: 'course-5-f-img-350x282.jpg',
+      tag: 'PROGRAMMING'
+    },
+
+    {
+      title: 'Finding excuses',
+      teacher: 'Eviton de Evitoni',
+      description: 'Shiver me timbers swing the lead quarter hearties hang the jib aft me broadside keelhaul six pounders. Lookout poop deck rum Barbary Coast me fire in the hole jury mast Brethren of the Coast. Crows nest ahoy.',
+      image: 'course-6-f-img-350x282.jpg',
+      tag: 'PROGRAMMING'
+    },
+    {
+      title: 'Business english',
+      teacher: 'Doris Crawford',
+      description: 'Become a professional Android Developer as you learn with us.',
+      image: 'course-7-f-img-350x282.jpg',
+      tag: 'SOFTWARE'
+    },
+
+    {
+      title: 'Professional Lorem',
+      teacher: 'Lorenzo Ipsumi',
+      description: 'Cupcake sugar plum muffin. Marzipan sweet candy marzipan soufflé. Tart candy canes marzipan sugar plum chocolate cake chocolate bar jelly-o. Jelly beans chocolate cake ice cream biscuit.',
+      image: 'course-8-f-img-350x282.jpg',
+      tag: 'PROGRAMMING'
+    },
+
+    {
+      title: 'Finding excuses',
+      teacher: 'Eviton de Evitoni',
+      description: 'Shiver me timbers swing the lead quarter hearties hang the jib aft me broadside keelhaul six pounders. Lookout poop deck rum Barbary Coast me fire in the hole jury mast Brethren of the Coast. Crows nest ahoy.',
+      image: 'course-9-f-img-350x282.jpg',
+      tag: 'PROGRAMMING'
+    },
+  ],
 })
