@@ -67,6 +67,8 @@
         <p>"{{ person.cit }}"</p>
         <h3>{{person.name}}</h3>
         <h4>{{ person.role }}</h4>
+
+       
       
 
     </swiper-slide>
@@ -87,7 +89,7 @@
 @use '../../scss/partials/vars' as *;
 
 .custom-container{
-  margin-bottom: 200px;
+  
   width: 100%;
   height: 650px;
   background-color: $color-tertiary;
