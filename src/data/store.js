@@ -284,5 +284,45 @@ export const store = reactive({
     'h5-client-2.png',
     'h5-client-3.png',
     'h5-client-4.png',
+  ],
+
+  footerNav: [
+    {
+      sectionTitle: 'iAcademy',
+      text: 'Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home.',
+      phone: '1-677-124-44227',
+      timeTable: 'Mon - Sat 8.00 - 18.00',
+    },
+
+    {
+      sectionTitle: 'Popular Courses',
+      courses: [
+        {
+          title: 'Business English',
+          professor: 'Preston Marshall',
+        },
+
+        {
+          title: 'Social Computing',
+          professor: 'David Sanders',
+        },
+
+        {
+          title: 'Learn Spanish',
+          professor: 'Jennie King',
+        }
+      ]
+    },
+
+    {
+      sectionTitle: 'Support',
+      menuVoices: [
+        'User dashboard',
+        'Contact Us',
+        'FAQ',
+        'Course Offer',
+        'Events',
+      ]
+    }
   ]
 })
