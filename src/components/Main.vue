@@ -6,6 +6,7 @@ import EmpoweringSection from './partials/EmpoweringSection.vue';
 import StudentCitSection from './partials/StudentCitSection.vue';
 import PossibilitiesSection from './partials/PossibilitiesSection.vue';
 import PopularCoursesSection from './partials/PopularCoursesSection.vue';
+import PricingPlansSection from './partials/PricingPlansSection.vue';
 
 export default {
   
@@ -17,6 +18,7 @@ export default {
     StudentCitSection,
     PossibilitiesSection,
     PopularCoursesSection,
+    PricingPlansSection,
   }
 
 
@@ -30,7 +32,7 @@ export default {
   <StudentCitSection/>
   <PossibilitiesSection/>
   <PopularCoursesSection/>
-
+  <PricingPlansSection/>
 </template>
 
 

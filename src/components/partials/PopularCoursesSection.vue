@@ -8,13 +8,14 @@
   import 'swiper/css/pagination';
   import { Pagination } from 'swiper/modules';
   import { store } from '../../data/store';
- 
+  import SwiperCard from './SwiperCard.vue';
  
 
   export default {
     components: {
       Swiper,
       SwiperSlide,
+      SwiperCard,
  
     },
 
@@ -50,28 +51,11 @@
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide>
-        <div class="img-container">
-          
-          <img src="../../assets/img/course-1-f-img-350x282.jpg" alt="">
-        </div>
-        <h1>Android Developer</h1>
-        <span>David Sanders</span>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quaerat repellat et perferendis, fuga autem tempora veritatis velit. In, accusamus!</p>
 
-        <div class="tag-icons">
-          ciao
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <h1>CIAONEEEEEEEEE</h1>
-      </swiper-slide>
-      <swiper-slide>
-        <h1>CIAONEEEEEEEEE</h1>
-      </swiper-slide>
-      <swiper-slide>
-        <h1>CIAONEEEEEEE</h1>
-      </swiper-slide>
+ 
+  <swiper-slide v-for="course in store.popularCourses" :key="course.title">
+    <swiper-card :title="course.title" :description="course.description" :tag="course.tag" :teacher="course.teacher" :image="course.image" :cost="course.cost" />
+  </swiper-slide>
    
  </swiper>
   </div>
@@ -84,6 +68,7 @@
 
 <style lang="scss" scoped>
   @use '../../scss/partials/vars' as *;
+
 
   .general-container{
     
@@ -112,23 +97,24 @@
   
 .swiper {
   width: 100%;
-  height: 70vh;
+  height: 500px;
+  margin-top: 100px;
 }
 
 .swiper-slide {
-  text-align: center;
+  
   font-size: 18px;
   background: #fff;
   cursor: pointer;
-  width: 300px;
+  width: 260px;
   height: 455px;
-  border: 1px solid black;
+  border: 1px solid $border-color;
 
   /* Center slide text vertically */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  
 
   .img-container{
     width: 100%;
