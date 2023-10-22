@@ -7,6 +7,8 @@ import StudentCitSection from './partials/StudentCitSection.vue';
 import PossibilitiesSection from './partials/PossibilitiesSection.vue';
 import PopularCoursesSection from './partials/PopularCoursesSection.vue';
 import PricingPlansSection from './partials/PricingPlansSection.vue';
+import SponsorsSection from './partials/SponsorsSection.vue';
+
 
 export default {
   
@@ -19,6 +21,7 @@ export default {
     PossibilitiesSection,
     PopularCoursesSection,
     PricingPlansSection,
+    SponsorsSection,
   }
 
 
@@ -33,6 +36,8 @@ export default {
   <PossibilitiesSection/>
   <PopularCoursesSection/>
   <PricingPlansSection/>
+  <SponsorsSection/>
+  
 </template>
 
 

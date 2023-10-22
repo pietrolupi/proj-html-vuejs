@@ -278,4 +278,11 @@ export const store = reactive({
       cost: 'FREE'
     },
   ],
+
+  sponsorsLogos: [
+    'h5-client-1.png',
+    'h5-client-2.png',
+    'h5-client-3.png',
+    'h5-client-4.png',
+  ]
 })

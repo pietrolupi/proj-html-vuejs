@@ -16,6 +16,9 @@ export default {
 <template>
   <div class="general-container">
 
+    <h1>Pricing Plans</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, rerum. Lorem, ipsum dolor.</p>
+
 <!-- LA TABELLA NON LA CICLO dato che è un elemento statico solo per mostrare i piani non cambierà la struttura -->
     <table>
       <tr class="first-row">
@@ -119,6 +122,7 @@ export default {
     </table>
 
   </div>
+  <div class="greyline"></div>
 </template>
 
 
@@ -126,10 +130,21 @@ export default {
   @use '../../scss/partials/vars' as *;
 
   .general-container{
-    margin-bottom: 300px;
+    padding: 100px 0 155px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    &>h1{
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    &>p{
+      color: $text-4-color-darker;
+      font-family: $secondary-font;
+      font-size: 1.15rem;
+      padding: 15px 0 80px 0 ;
+    }
   }
 
   tr{
@@ -219,6 +234,7 @@ export default {
         color: $text-4-color-darker;
         padding: 10px 30px;
         background-color: white;
+        cursor: default;
 
         &.active{
           background-color: $color-tertiary;
@@ -231,6 +247,13 @@ export default {
     img{
       margin-bottom: 20px ;
     }
+
+   
   }
   
+  .greyline{
+    height: 1px;
+    width: 100%;
+    background-color: $border-color;
+  }
 </style>

@@ -73,7 +73,8 @@
   .general-container{
     
     margin-top: 100px;
-    margin-bottom: 300px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid $border-color;
 
     .top-text{
       text-align: center;
