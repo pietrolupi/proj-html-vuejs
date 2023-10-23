@@ -78,6 +78,19 @@ export default {
       width: 140px;
       background-color: #f2f8fc;
       border: 1px solid $border-color;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $color-tertiary ;
+        scale: 1.05;
+        transition: 0.15s;
+        img{
+          filter: brightness(100);
+        }
+        span{
+          color: white;
+        }
+      }
 
       span{
         font-weight: 600;
@@ -105,6 +118,10 @@ export default {
     a{
       color: $color-tertiary;
       font-weight: 600;
+      &:hover{
+        text-decoration: underline;
+        color: lighten($color: $color-tertiary, $amount: 10);
+      }
     }
   }
   

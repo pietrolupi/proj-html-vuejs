@@ -36,29 +36,36 @@ export default {
 
     
 <template>
-  <swiper
-    :slidesPerView="1"
-    :spaceBetween="0"
-    :pagination="{ clickable: true }"
-    :modules="modules"
-    class="mySwiper"
-  >
-    <swiper-slide v-for="item in store.jumbotronContent" :key="item.title">
-      <JumboSwiperCard 
-        :title="item.title"
-        :text="item.text" 
-        :image="item.image"
-        :id="item.id" 
-      />
-    </swiper-slide>
-    
-    <nav class="d-flex justify-content-between">
-      <img src="../assets/img/logo-light.png" alt="">
-      <ul class="d-flex">
-        <li v-for="(voice, index) in store.jumboMenu" :key="index" v-html="voice"></li>
-      </ul>
-    </nav>
-  </swiper>
+
+    <div id="mia-ancora" class="jumbo-container">
+
+      <swiper
+        :slidesPerView="1"
+        :spaceBetween="0"
+        :pagination="{ clickable: true }"
+        :modules="modules"
+        class="mySwiper"
+      >
+        <swiper-slide v-for="item in store.jumbotronContent" :key="item.title">
+          <JumboSwiperCard 
+            :title="item.title"
+            :text="item.text" 
+            :image="item.image"
+            :id="item.id" 
+          />
+        </swiper-slide>
+        
+        <nav class="d-flex justify-content-between">
+          <img src="../assets/img/logo-light.png" alt="">
+          <ul class="d-flex">
+            <li v-for="(voice, index) in store.jumboMenu" :key="index" >
+            <a v-html="voice" href=""></a>
+            </li>
+          </ul>
+        </nav>
+      </swiper>
+      
+    </div>
 </template>
   
 
@@ -66,7 +73,25 @@ export default {
 
 @use '../scss/partials/vars' as *;
 
+.blue-square{
+  height: 50px;
+  width: 50px;
+  background-color: $color-tertiary;
+  position: sticky;
+  top: 20px; 
+  z-index: 999;
+  color: $text-secondary-color;
+  font-family: $secondary-font;
+  border: 1px solid $border-color;
 
+  p{
+    margin: 0;
+  }
+  i{
+    margin-bottom: -20px;
+  }
+      
+  }
 
 nav{
       align-items: center;
@@ -85,11 +110,18 @@ nav{
         padding: 0;
         li{
           
-          
           display: inline-block;
           margin: 0px 15px;
           margin-bottom: -7px;
-          cursor: pointer;
+
+          a{
+            color: $text-secondary-color;
+            &:hover{
+              text-decoration: underline;
+              color: lighten($color: $text-secondary-color, $amount: 20);
+            }
+          }
+          
         }
       }
     }

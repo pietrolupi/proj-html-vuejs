@@ -35,30 +35,34 @@
 
 
 <template>
-  <div class="general-container">
 
-    <div class="top-text">
-      <h1>Popular Online Courses</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illum, omnis commodi maxime atque esse numquam a molestias perferendis explicabo?</p>
-    </div>
+  <div class="popular-courses">
 
-
-    <swiper
-        :slidesPerView="3"
-        :spaceBetween="30"
-        :pagination="{
-          clickable: true,
-        }"
-        :modules="modules"
-        class="mySwiper"
-      >
-
-    
-      <swiper-slide v-for="course in store.popularCourses" :key="course.title">
-        <popular-swiper-card :title="course.title" :description="course.description" :tag="course.tag" :teacher="course.teacher" :image="course.image" :cost="course.cost" />
-      </swiper-slide>
+    <div class="general-container">
+  
+      <div class="top-text">
+        <h1>Popular Online Courses</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illum, omnis commodi maxime atque esse numquam a molestias perferendis explicabo?</p>
+      </div>
+  
+  
+      <swiper
+          :slidesPerView="3"
+          :spaceBetween="30"
+          :pagination="{
+            clickable: true,
+          }"
+          :modules="modules"
+          class="mySwiper"
+        >
+  
       
-    </swiper>
+        <swiper-slide v-for="course in store.popularCourses" :key="course.title">
+          <popular-swiper-card :title="course.title" :description="course.description" :tag="course.tag" :teacher="course.teacher" :image="course.image" :cost="course.cost" />
+        </swiper-slide>
+        
+      </swiper>
+    </div>
   </div>
 
 
@@ -70,11 +74,14 @@
 <style lang="scss" scoped>
   @use '../../scss/partials/vars' as *;
 
+  .popular-courses{
+    background-image: url('../../assets/img/background-pattern.jpg');
+    background-position: center;
+  }
 
   .general-container{
     
-    margin-top: 100px;
-    padding-bottom: 100px;
+    padding:100px 0;
     
 
     .top-text{

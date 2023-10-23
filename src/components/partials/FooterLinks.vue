@@ -48,6 +48,9 @@ export default {
 
       a{
         color: $text-4-color-darker;
+        &:hover{
+          color: lighten($color: $text-4-color-darker, $amount: 40);
+        }
       }
 
       a,p{

@@ -180,16 +180,13 @@ export const store = reactive({
 
       content:{
         title: 'Tricks to succed',
-        text: ' Shiver me timbers swing the lead quarter hearties hang the jib aft me broadside keelhaul six pounders. Lookout poop deck rum Barbary Coast me fire in the hole jury mast Brethren of the Coast. Crows nest ahoy case shot gunwalls grog bilged on her anchor me Jack Ketch.',
+        text: ' Shiver me timbers swing the lead quarter hearties hang the jib aft me broadside keelhaul six pounders. Lookout poop deck rum Barbary Coast me fire in the hole jury mast Brethren of the Coast.',
 
         advantages: [
           'We enrich lives through learning.',
           'Maximizing potential through individual attention.',
           'The trusted name for specialized training.',
           'People teach. People learn. This is where they connect.',
-       
-   
-
         ],
 
         icon: 'h12-tabs-icon-5.png'
@@ -252,7 +249,7 @@ export const store = reactive({
       title: 'Business english',
       teacher: 'Doris Crawford',
       description: 'Become a professional Android Developer as you learn with us.',
-      image: 'course-4-f-img-350x282.jpg',
+      image: 'course-4-f-img.jpg',
       tag: 'SOFTWARE',
       cost: 'FREE'
     },
@@ -261,7 +258,7 @@ export const store = reactive({
       title: 'Professional Lorem',
       teacher: 'Lorenzo Ipsumi',
       description: 'Cupcake sugar plum muffin. Marzipan sweet candy marzipan soufflé. Tart candy canes marzipan sugar plum chocolate cake chocolate bar jelly-o. Jelly beans chocolate cake ice cream biscuit.',
-      image: 'course-5-f-img-350x282.jpg',
+      image: 'course-5-f-img.jpg',
       tag: 'PROGRAMMING',
       cost: '$50'
     },
@@ -270,7 +267,7 @@ export const store = reactive({
       title: 'Finding excuses',
       teacher: 'Eviton de Evitoni',
       description: 'Shiver me timbers swing the lead quarter hearties hang the jib aft me broadside keelhaul six pounders. Lookout poop deck rum Barbary Coast me fire in the hole jury mast Brethren of the Coast. Crows nest ahoy.',
-      image: 'course-6-f-img-350x282.jpg',
+      image: 'course-6-f-img.jpg',
       tag: 'PROGRAMMING',
       cost: 'FREE'
     },
@@ -278,7 +275,7 @@ export const store = reactive({
       title: 'Business english',
       teacher: 'Doris Crawford',
       description: 'Become a professional Android Developer as you learn with us.',
-      image: 'course-7-f-img-350x282.jpg',
+      image: 'course-7-f-img.jpg',
       tag: 'SOFTWARE',
       cost: '$70'
     },
@@ -287,7 +284,7 @@ export const store = reactive({
       title: 'Professional Lorem',
       teacher: 'Lorenzo Ipsumi',
       description: 'Cupcake sugar plum muffin. Marzipan sweet candy marzipan soufflé. Tart candy canes marzipan sugar plum chocolate cake chocolate bar jelly-o. Jelly beans chocolate cake ice cream biscuit.',
-      image: 'course-8-f-img-350x282.jpg',
+      image: 'course-8-f-img.jpg',
       tag: 'PROGRAMMING',
       cost: '$85'
     },
@@ -296,7 +293,7 @@ export const store = reactive({
       title: 'Finding excuses',
       teacher: 'Eviton de Evitoni',
       description: 'Shiver me timbers swing the lead quarter hearties hang the jib aft me broadside keelhaul six pounders. Lookout poop deck rum Barbary Coast me fire in the hole jury mast Brethren of the Coast. Crows nest ahoy.',
-      image: 'course-9-f-img-350x282.jpg',
+      image: 'course-9-f-img.jpg',
       tag: 'PROGRAMMING',
       cost: 'FREE'
     },

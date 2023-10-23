@@ -104,6 +104,8 @@ export default {
 
       p,li{
         color: $text-6-color;
+        font-family: $secondary-font;
+        font-size: 1.1rem;
       }
 
       ul{

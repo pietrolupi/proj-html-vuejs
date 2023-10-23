@@ -72,6 +72,11 @@ export default {
           border: none;
           padding: 19px 41px ;
           margin-top: 30px;
+          &:hover{
+            background-color: $color-tertiary-darker;
+            border: 1px solid $text-secondary-color;
+            padding: 18px 40px;
+          }
         }
 
   }

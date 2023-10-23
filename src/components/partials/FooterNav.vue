@@ -50,10 +50,12 @@ export default {
       <h1>Support</h1>
       </div>
       <ul>
-        <li class="light-grey"
+        <li 
         v-for="item in store.footerNav[2].menuVoices" 
         :key="item">
-          {{item}}
+
+          <a class="light-grey" href="">{{item}}</a>
+          
         </li>
 
       
@@ -131,7 +133,12 @@ export default {
 
       li{
         padding-bottom: 12px;
-        cursor: pointer;
+        a{
+          
+          &:hover{
+            color: lighten($color: $text-4-color, $amount: 30);
+          }
+        }
       }
 
       i{

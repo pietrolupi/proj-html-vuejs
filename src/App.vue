@@ -2,8 +2,6 @@
 
 <script>
 
-
-import Jumbotron from './components/Jumbotron.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
 import DinamicJumbotron from './components/DinamicJumbotron.vue';
@@ -12,7 +10,6 @@ export default {
 
   name: 'App',
   components: {
-    Jumbotron,
     Main,
     Footer,
     DinamicJumbotron
@@ -39,7 +36,7 @@ export default {
 
 
 <template>
-  <DinamicJumbotron/>
+  <DinamicJumbotron />
   <!-- <Jumbotron/> -->
   <Main/>
   <Footer/>

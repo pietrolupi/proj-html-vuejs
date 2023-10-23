@@ -8,6 +8,7 @@ import PossibilitiesSection from './partials/PossibilitiesSection.vue';
 import PopularCoursesSection from './partials/PopularCoursesSection.vue';
 import PricingPlansSection from './partials/PricingPlansSection.vue';
 import SponsorsSection from './partials/SponsorsSection.vue';
+import TopAnchor from './partials/TopAnchor.vue';
 
 
 export default {
@@ -22,6 +23,7 @@ export default {
     PopularCoursesSection,
     PricingPlansSection,
     SponsorsSection,
+    TopAnchor,
   }
 
 
@@ -29,18 +31,26 @@ export default {
 </script>
 
 <template>
+
+  <main>
+    <TopAnchor/>
+    <TrustedSection/>
+    <EmpoweringSection/>
+    <StudentCitSection/>
+    <PossibilitiesSection/>
+    <PopularCoursesSection/>
+    <PricingPlansSection/>
+    <SponsorsSection/>
+    
+  </main>
   
-  <TrustedSection/>
-  <EmpoweringSection/>
-  <StudentCitSection/>
-  <PossibilitiesSection/>
-  <PopularCoursesSection/>
-  <PricingPlansSection/>
-  <SponsorsSection/>
   
 </template>
 
 
 <style lang="scss" scoped >
 
+  main{
+    position: relative;
+  }
 </style>
