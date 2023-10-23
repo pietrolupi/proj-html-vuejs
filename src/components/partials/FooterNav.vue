@@ -69,6 +69,7 @@ export default {
     </div>
 
   </div>
+  <div class="grey-line"></div>
 </template>
 
 
@@ -78,7 +79,8 @@ export default {
   .general-container{
     display: flex;
     border-bottom: $border-color;
-    padding-bottom: 150px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid $border-color-darker;
     .nav-container{
       width: 23.5%;
       color: white;
@@ -97,7 +99,7 @@ export default {
         display: flex;
         
         align-items: center;
-        height: 120px;
+        height: 90px;
         img{
           filter: brightness(100);
           width: 150px;

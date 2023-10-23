@@ -2,12 +2,14 @@
 <script>
 import { store } from '../data/store';
 import FooterNav from './partials/FooterNav.vue';
+import FooterLinks from './partials/FooterLinks.vue';
 
 export default {
   name: 'Footer',
 
   components:{
     FooterNav,
+    FooterLinks,
   },
 
   data(){
@@ -21,6 +23,7 @@ export default {
 <template>
   <footer>
     <FooterNav/>
+    <FooterLinks/>
 
   </footer>
 
@@ -32,6 +35,6 @@ export default {
 
   footer{
     background-color: $darkest-background;
-    padding: 200px 0;
+    padding: 80px 0 35px 0;
   }
 </style>

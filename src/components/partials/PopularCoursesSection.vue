@@ -61,7 +61,7 @@
   </div>
 
 
-
+<div class="greyline"></div>
 
 </template>
 
@@ -74,7 +74,7 @@
     
     margin-top: 100px;
     padding-bottom: 100px;
-    border-bottom: 1px solid $border-color;
+    
 
     .top-text{
       text-align: center;
@@ -90,6 +90,7 @@
         color: $text-7-color;
       }
     }
+    
   }
 
 
@@ -135,5 +136,11 @@
   height: 100%;
   object-fit: cover;
 }
+
+.greyline{
+    height: 1px;
+    width: 100%;
+    background-color: $border-color;
+  }
 
 </style>
