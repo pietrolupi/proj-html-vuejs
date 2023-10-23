@@ -2,6 +2,29 @@
 import {reactive} from 'vue';
 
 export const store = reactive({
+
+  jumbotronContent: [
+    {
+      id: 'background-3',
+      title: 'Leaders in Learning',
+      text: 'Empowering children to reach their potential.',
+      image: 'h5-slide-3-background.jpg',
+    },
+
+    {
+      id:'background-2',
+      title: 'Contemporary Ideas',
+      text: 'Finding the right answer using the right mindset. ',
+      image:'h5-slide-2-background.jpg',
+    },
+
+    {
+      id:'background-1',
+      title: 'Accelerate Your Career',
+      text: 'Providing life changing experiences through education.',
+      image: 'h5-slide-1-background.jpg',
+    }
+  ],
   
   jumboMenu: [
     'HOME',

@@ -8,16 +8,17 @@
   import 'swiper/css/pagination';
   import { Pagination } from 'swiper/modules';
   import { store } from '../../data/store';
-  import SwiperCard from './SwiperCard.vue';
+  import PopularSwiperCard from './PopularSwiperCard.vue';
+
  
 
   export default {
     components: {
-      Swiper,
-      SwiperSlide,
-      SwiperCard,
- 
-    },
+    Swiper,
+    SwiperSlide,
+    PopularSwiperCard,
+    
+},
 
     data(){
       return{
@@ -43,21 +44,21 @@
 
 
     <swiper
-    :slidesPerView="3"
-    :spaceBetween="30"
-    :pagination="{
-      clickable: true,
-    }"
-    :modules="modules"
-    class="mySwiper"
-  >
+        :slidesPerView="3"
+        :spaceBetween="30"
+        :pagination="{
+          clickable: true,
+        }"
+        :modules="modules"
+        class="mySwiper"
+      >
 
- 
-  <swiper-slide v-for="course in store.popularCourses" :key="course.title">
-    <swiper-card :title="course.title" :description="course.description" :tag="course.tag" :teacher="course.teacher" :image="course.image" :cost="course.cost" />
-  </swiper-slide>
-   
- </swiper>
+    
+      <swiper-slide v-for="course in store.popularCourses" :key="course.title">
+        <popular-swiper-card :title="course.title" :description="course.description" :tag="course.tag" :teacher="course.teacher" :image="course.image" :cost="course.cost" />
+      </swiper-slide>
+      
+    </swiper>
   </div>
 
 

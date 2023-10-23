@@ -6,6 +6,7 @@
 import Jumbotron from './components/Jumbotron.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
+import DinamicJumbotron from './components/DinamicJumbotron.vue';
 
 export default {
 
@@ -14,6 +15,7 @@ export default {
     Jumbotron,
     Main,
     Footer,
+    DinamicJumbotron
   },
 
   data(){
@@ -37,7 +39,8 @@ export default {
 
 
 <template>
-  <Jumbotron/>
+  <DinamicJumbotron/>
+  <!-- <Jumbotron/> -->
   <Main/>
   <Footer/>
 </template>
